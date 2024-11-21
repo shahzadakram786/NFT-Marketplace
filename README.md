@@ -30,3 +30,5 @@ NFT Marketplace is a responsive, modern web application where users can discover
    ```bash
    git clone https://github.com/<your-username>/NFT_MarketPlace.git
    cd NFT_MarketPlace
+   npm i --legacy-peer-deps
+   npm run dev 
