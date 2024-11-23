@@ -5,6 +5,7 @@ import Home from '../pages/Home/Home'
 import Marketplace from '../pages/Marketplace/Marketplace'
 import Rankings from '../pages/rankings/Rankings'
 import ConnectWallet from '../pages/connectWallet/ConnectWallet'
+import Signup from '../pages/signuppage'
 
 const routes = createBrowserRouter([
     {
@@ -31,6 +32,11 @@ const routes = createBrowserRouter([
         path:'/marketplace',
         element:<Layout/>,
         children:[{index:true, element:<Marketplace/>}]
+    },
+    {
+        path:'/signup',
+        element:<Layout/>,
+        children:[{index:true, element:<Signup/>}]
     }
 ]) 
 
