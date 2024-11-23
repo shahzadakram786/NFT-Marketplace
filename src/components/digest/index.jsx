@@ -1,26 +1,47 @@
-import React from 'react'
-import img from '../../assets/Photo.png'
+import React from "react";
+import img from "../../assets/Photo.png";
 
 function DigestComponent() {
   return (
-    <div className='h-[550px] bg-[#2B2B2B] flex justify-center items-center'>
-      <div className='bg-[#3B3B3B] p-10 rounded-3xl w-[1240px] h-[430px] flex gap-[6rem] justify-center items-center'>
-      <div>
-        <img src={img} alt="" className='h-[21rem] w-[31rem] ' />
-      </div>
-      
-        <div className='w-[31rem] text-white	flex flex-col justify-center '>
-   <h1 className="text-[3.5rem] font-bold	 py-[18px] leading-[75px]		" >Join our weekly digest</h1>
-   <p className='font-light	 text-[1.5rem]	'>Get exclusive promotions & updates straight to your inbox.</p>
-   <div className='py-[2.0rem] flex '>
-                  <input className='p-6 rounded-l-3xl w-[19rem] h-[4rem] ' type="email" required placeholder='Enter your email here' />
-                  <input className='p-6 rounded-r-3xl bg-purple-500 text-white cursor-pointer  w-[10rem]  h-[4rem] ' type="submit" value={'Subscribe'}/>
-                </div>
+      <div className="bg-[#3B3B3B] max-sm:bg-[#2B2B2B] p-10 max-sm:p-0 rounded-3xl flex gap-[6rem] justify-center w-[80%] max-sm:w-[90%] max-lg:w-[90%] items-center">
+
+        <div className=" flex  justify-between max-sm:flex-col gap-5 w-full h-full">
+
+        <div className="rounded-3xl overflow-hidden">
+          <img src={img} alt="" className="w-full h-full object-cover " />
         </div>
 
-    </div>
-    </div>
-  )
+        <div className="w-[50%] max-sm:w-full text-white	flex flex-col justify-center gap-5">
+          <div className="flex flex-col gap-5">
+            <h1 className="text-6xl font-bold max-sm:text-2xl max-lg:text-4xl">
+            Join our weekly digest
+            </h1>
+           <p className="font-light	 text-2xl max-sm:text-lg max-lg:text-lg">
+             Get exclusive promotions & updates straight to your inbox.
+          </p>
+          </div>
+          
+          <div className="flex max-sm:flex-col max-sm:gap-5 ">
+            <input
+              className="p-6 rounded-l-3xl w-[60%] max-sm:w-full max-sm:rounded-3xl max-sm:p-3 "
+              type="email"
+              required
+              placeholder="Enter your email here"
+            />
+            <input
+              className="p-6 rounded-r-3xl bg-purple-500 text-white cursor-pointer  w-[40%] max-sm:w-full max-sm:rounded-3xl max-sm:p-3 "
+              type="submit"
+              value={"Subscribe"}
+            />
+          </div>
+        </div>
+
+
+        </div>
+        
+      </div>
+    
+  );
 }
 
-export default DigestComponent
+export default DigestComponent;
