@@ -46,7 +46,7 @@ const Header = () => {
             ))}
           </div>
 
-          <Link className='flex items-center gap-3 text-white bg-[#A259FF] border-none px-6 py-3 rounded-2xl'>
+          <Link to={'/signup'} className='flex items-center gap-3 text-white bg-[#A259FF] border-none px-6 py-3 rounded-2xl'>
           <AiOutlineUser size={20} />
           <p className='text-xl'>Sign up</p>
           </Link>
