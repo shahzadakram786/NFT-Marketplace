@@ -6,6 +6,7 @@ import Marketplace from '../pages/Marketplace/Marketplace'
 import Rankings from '../pages/rankings/Rankings'
 import ConnectWallet from '../pages/connectWallet/ConnectWallet'
 import Signup from '../pages/signuppage'
+import DynamicPage from '../pages/dynamicTopCreators/DynamicPage'
 
 const routes = createBrowserRouter([
     {
@@ -32,6 +33,11 @@ const routes = createBrowserRouter([
         path:'/marketplace',
         element:<Layout/>,
         children:[{index:true, element:<Marketplace/>}]
+    },
+    {
+        path:'/dynamicpage',
+        element:<Layout/>,
+        children:[{index:true, element:<DynamicPage/>}]
     },
     {
         path:'/signup',

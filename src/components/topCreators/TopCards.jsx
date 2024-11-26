@@ -107,7 +107,7 @@ const TopCards = () => {
     <div className="grid grid-cols-4 gap-10 max-sm:grid-cols-1 max-md:grid-cols-2 max-lg:grid-cols-2  w-full ">
       {topCreators.map((items) => (
         <Link
-          to={"/rankings"}
+          to={"/dynamicpage"}
           key={items}
           className=" rounded-3xl w-full max-md:p-4 p-5 max-sm:w-full flex flex-col max-md:flex-row max-lg:flex-row max-md:gap-4 gap-5 bg-[#3B3B3B] relative"
         >
