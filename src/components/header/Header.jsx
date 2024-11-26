@@ -41,7 +41,7 @@ const Header = () => {
                     to={`/${item.toLowerCase().replace(/\s+/g, '-')}`}
                     className="text-xl"
                   >
-                    {item}npm 
+                    {item}
                   </Link>
                 </div>
               ))}
