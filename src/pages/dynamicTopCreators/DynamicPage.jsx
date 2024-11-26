@@ -6,6 +6,7 @@ import { BiPlus } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import { BsDiscord, BsInstagram, BsTwitter, BsYoutube } from "react-icons/bs";
 
+
 const DynamicPage = () => {
   return (
     <div className="w-full bg-[#2B2B2B] border-b-gray-500">
