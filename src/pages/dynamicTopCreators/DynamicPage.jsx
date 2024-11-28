@@ -5,6 +5,9 @@ import { CgCopy } from "react-icons/cg";
 import { BiPlus } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import { BsDiscord, BsInstagram, BsTwitter, BsYoutube } from "react-icons/bs";
+import TrendingCollection from "../../components/TrendingCollection/TrendingCollection";
+import TrendingCollectionData from "../../components/TrendingCollection/TrendingCollectionData";
+import ReDiscoverNft from "../../components/discoverMoreNft/ReDiscoverNft";
 
 
 const DynamicPage = () => {
@@ -135,6 +138,13 @@ const DynamicPage = () => {
 
                 
 
+            </div>
+
+            <div className="flex justify-center items-center p-4">
+              <div className="w-[80%]  p-4 flex flex-col gap-5 flex-wrap max-sm:w-full max-md:w-full max-lg:w-[90%] lg:w-[90%]">
+              <ReDiscoverNft/>
+              </div>
+              
             </div>
 
     </div>
