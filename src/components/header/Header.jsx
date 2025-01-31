@@ -13,11 +13,11 @@ const Header = () => {
   return (
     <>
       <nav className="bg-[#2B2B2B] w-full h-auto">
-        <div className="p-6 px-20 max-sm:p-2 flex justify-between items-center max-sm:w-[90%] m-auto">
+        <div className="p-6 px-8  max-sm:p-2 flex justify-between items-center max-sm:w-[90%] m-auto">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2"  onClick={() => setMobileOpen(false)}>
             <img src={marketLogo} alt="Marketplace Logo" />
-            <h3 className="text-white font-bold text-xl">NFT Marketplace</h3>
+            <h3 className="text-white font-bold text-sm md:text-base lg:text-lg">NFT Marketplace</h3>
           </Link>
 
           {/* Menu Button for Mobile */}
@@ -33,32 +33,43 @@ const Header = () => {
           </button>
 
           {/* Desktop Navigation */}
-          <div className="lg:flex gap-10 items-center hidden">
+          <div className="lg:flex gap-2 xl:gap-10 items-center justify-center hidden">
             <div className="text-white flex gap-10">
               {navLinks.map((item) => (
                 <div key={item}>
                   <Link
                     to={`/${item.toLowerCase().replace(/\s+/g, '-')}`}
-                    className="text-xl"
+                    className="text-lg" 
                   >
                     {item}
                   </Link>
                 </div>
               ))}
             </div>
+
+            
+           
+          </div>
+
+          <div className='hidden lg:flex gap-2' >
+               <Link
+              to="/signup"
+              className="flex items-center gap-3 text-white border-none px-6 py-3 rounded-2xl" >
+              <p className="text-lg">Sign In</p>
+            </Link>
             <Link
               to="/signup"
               className="flex items-center gap-3 text-white bg-[#A259FF] border-none px-6 py-3 rounded-2xl"
             >
               <AiOutlineUser size={20} />
-              <p className="text-xl">Sign up</p>
+              <p className="text-lg">Sign up</p>
             </Link>
-          </div>
+            </div>
         </div>
 
         {/* Mobile Navigation */}
         {mobileOpen && (
-          <div className="lg:hidden bg-[#1E1E1E] p-6">
+          <div className="lg:hidden bg-[#1E1E1E] h-full w-full absolute p-6">
             <div className="text-white flex flex-col gap-6 md:justify-center md:items-center">
               {navLinks.map((item) => (
                 <Link

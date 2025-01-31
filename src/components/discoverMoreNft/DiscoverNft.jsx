@@ -3,7 +3,7 @@ import { IoEyeOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import ReDiscoverNft from "./ReDiscoverNft";
 
-const DiscoverNft = () => {
+const DiscoverNft = ({data}) => {
  
 
   return (
@@ -22,7 +22,7 @@ const DiscoverNft = () => {
 
 
             <div className="hidden max-sm:w-full max-sm:flex">
-              <ReDiscoverNft/>
+              <ReDiscoverNft data={data}/>
             </div>
 
 
@@ -38,7 +38,7 @@ const DiscoverNft = () => {
 
         {/* Card Section */}
         <div className="max-sm:hidden">
-               <ReDiscoverNft/>
+               <ReDiscoverNft data={data}/>
         </div>
       </div>
     </div>

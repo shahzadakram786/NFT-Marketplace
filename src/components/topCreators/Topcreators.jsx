@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { PiRocketLaunch } from "react-icons/pi";
 import TopCards from "./TopCards";
 
-const Topcreators = () => {
+const Topcreators = ({data}) => {
   return (
     <div className="flex flex-col justify-center items-center w-[80%] max-sm:w-[90%] max-lg:w-[90%] gap-10">
       {/* content area  */}
@@ -19,7 +19,7 @@ const Topcreators = () => {
           </p>
 
           <div className="hidden max-sm:flex w-full">
-            <TopCards />
+            <TopCards data={data} />
           </div>
 
           <Link
@@ -33,7 +33,7 @@ const Topcreators = () => {
       </div>
       {/* image area   */}
       <div className="max-sm:hidden w-full">
-        <TopCards />
+        <TopCards data={data}/>
       </div>
     </div>
   );

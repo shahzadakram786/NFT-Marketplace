@@ -11,7 +11,7 @@ const NftCards = ({mainImage, title, dp, pname, price, curr, highestBid, link })
       <img
         src={mainImage}
         alt="NFT"
-        className="w-full h-[270px] object-fill"
+        className="w-full h-[270px] object-cover"
       />
     </div>
 
