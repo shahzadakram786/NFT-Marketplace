@@ -8,9 +8,9 @@ const Layout = () => {
     <div>
         <div>
             <Header/>
-            <div>
+            {/* <div className='bg-[#2B2B2B] flex flex-col justify-center items-center py-20'> */}
                 <Outlet/>
-            </div>
+            {/* </div> */}
             <Footer/>
         </div>
     </div>
