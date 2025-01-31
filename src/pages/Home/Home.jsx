@@ -6,6 +6,7 @@ import Topcreators from "../../components/topCreators/Topcreators";
 import DiscoverNft from "../../components/discoverMoreNft/DiscoverNft";
 import WorksComponent from '../../components/works';
 import DigestComponent from '../../components/digest';
+import Trending from '../../components/TrendingCollection/TrendingCollectionData';
 
 const Home = () => {
 
@@ -16,13 +17,13 @@ const Home = () => {
 
 
     
-      <section className="bg-[#2B2B2B] flex justify-center items-center py-20">
+      
         <Hero />
-      </section>
+    
       <section className="bg-[#2B2B2B] flex justify-center items-center py-20">
-          <TrendingCollection/>
+          <TrendingCollection data={Trending}/>
       </section>
-      <section className="bg-[#2B2B2B] flex justify-center items-center py-20">
+      <section className="py-20">
           <Topcreators/>
       </section>
       <section className="bg-[#2B2B2B] flex justify-center items-center py-20">

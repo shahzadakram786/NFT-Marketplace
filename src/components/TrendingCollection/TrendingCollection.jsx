@@ -13,39 +13,8 @@ import robot2 from "../../assets/home/trending/Secondary Photo Placeholder (5).p
 import avaRo from "../../assets/home/trending/Avatar Placeholder (2).png";
 import { Link } from "react-router-dom";
 
-const TrendingCollection = () => {
-  const Trending = [
-    {
-      id: 1,
-      imageMain: imageM,
-      image1: image1,
-      image2: image2,
-      numImag: "1025+",
-      title: "DSGN Animals",
-      avatarImg: AvaImg,
-      avatarName: "MrFox",
-    },
-    {
-      id: 2,
-      imageMain: mushimgM,
-      image1: mushimg1,
-      image2: mushimg2,
-      numImag: "1025+",
-      title: "Magic Mushrooms",
-      avatarImg: avaMus,
-      avatarName: "Shroomie",
-    },
-    {
-      id: 3,
-      imageMain: robotM,
-      image1: robot1,
-      image2: robot2,
-      numImag: "1025+",
-      title: "Disco Machines",
-      avatarImg: avaRo,
-      avatarName: "BeKind2Robots",
-    },
-  ];
+const TrendingCollection = ({data}) => {
+
 
   return (
     <>
@@ -60,9 +29,9 @@ const TrendingCollection = () => {
           </p>
         </div>
         {/* iamages section  */}
-        <div className="grid grid-cols-3 gap-5 max-sm:grid-cols-1 max-lg:grid-cols-2  w-full content-center m-auto  ">
-          {Trending.map((items) => (
-            <div key={items} className="flex flex-col gap-5 max-sm:w-full">
+        <div className="grid grid-cols-3 gap-5 max-sm:grid-cols-1 max-lg:grid-cols-2  w-full content-center m-auto" >
+          {data.map((items) => (
+            <div key={items} className="flex flex-col justify-center items-center gap-5 max-sm:w-full">
               <Link to={"/marketplace"}>
                 <img src={items.imageMain} className="max-sm:w-full" alt="" />
               </Link>
