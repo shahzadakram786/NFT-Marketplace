@@ -1,23 +1,27 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import marketLogo from '../../assets/nav/Storefront.png';
-import { AiOutlineUser } from 'react-icons/ai';
-import { IoIosMenu, IoIosClose } from 'react-icons/io';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import marketLogo from "../../assets/nav/Storefront.png";
+import { AiOutlineUser } from "react-icons/ai";
+import { IoIosMenu, IoIosClose } from "react-icons/io";
 
 const Header = () => {
-  const navLinks = ['Marketplace', 'Rankings', 'Connect a wallet'];
+  const navLinks = ["Marketplace", "Rankings", "Connect a wallet"];
   const [mobileOpen, setMobileOpen] = useState(false);
-
-
 
   return (
     <>
       <nav className="bg-[#2B2B2B] w-full h-auto">
         <div className="p-6 px-8  max-sm:p-2 flex justify-between items-center max-sm:w-[90%] m-auto">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2"  onClick={() => setMobileOpen(false)}>
+          <Link
+            to="/"
+            className="flex items-center gap-2"
+            onClick={() => setMobileOpen(false)}
+          >
             <img src={marketLogo} alt="Marketplace Logo" />
-            <h3 className="text-white font-bold text-sm md:text-base lg:text-lg">NFT Marketplace</h3>
+            <h3 className="text-white font-bold text-sm md:text-base lg:text-lg">
+              NFT Marketplace
+            </h3>
           </Link>
 
           {/* Menu Button for Mobile */}
@@ -38,33 +42,39 @@ const Header = () => {
               {navLinks.map((item) => (
                 <div key={item}>
                   <Link
-                    to={`/${item.toLowerCase().replace(/\s+/g, '-')}`}
-                    className="text-lg" 
+                    to={`/${item.toLowerCase().replace(/\s+/g, "-")}`}
+                    className="text-lg group relative"
                   >
-                    {item}
+                    <span className="relative z-10">{item}</span>
+                    <span className="absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 bg-[#A259FF] group-hover:w-3/6 group-hover:left-1/4"></span>
+                    <span className="absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 bg-[#A259FF] group-hover:w-3/6 group-hover:right-1/4"></span>
                   </Link>
                 </div>
               ))}
             </div>
-
-            
-           
           </div>
 
-          <div className='hidden lg:flex gap-2' >
-               <Link
-              to="/signup"
-              className="flex items-center gap-3 text-white border-none px-6 py-3 rounded-2xl" >
+          <div className="hidden lg:flex gap-2">
+            <Link
+              to="/login"
+              className="flex items-center gap-3 text-white border-none px-6 py-3 rounded-2xl"
+            >
               <p className="text-lg">Sign In</p>
             </Link>
             <Link
               to="/signup"
-              className="flex items-center gap-3 text-white bg-[#A259FF] border-none px-6 py-3 rounded-2xl"
+              className="relative inline-flex items-center gap-3 overflow-hidden font-medium transition-all bg-[#A259FF] rounded-2xl group px-6 py-3"
             >
-              <AiOutlineUser size={20} />
-              <p className="text-lg">Sign up</p>
+              <span className="absolute bottom-0 left-0 w-56 h-48 bg-purple-700 rounded translate-x-full translate-y-full transition-all duration-500 ease-out mb-9 ml-9 group-hover:ml-0 group-hover:mb-24 group-hover:translate-x-0"></span>
+              <AiOutlineUser
+                size={20}
+                className="relative z-10 text-white transition-colors duration-300 ease-in-out group-hover:text-white"
+              />
+              <p className="relative z-10 text-lg text-white transition-colors duration-300 ease-in-out group-hover:text-white">
+                Sign up
+              </p>
             </Link>
-            </div>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
@@ -74,7 +84,7 @@ const Header = () => {
               {navLinks.map((item) => (
                 <Link
                   key={item}
-                  to={`/${item.toLowerCase().replace(/\s+/g, '-')}`}
+                  to={`/${item.toLowerCase().replace(/\s+/g, "-")}`}
                   className="text-xl"
                   onClick={() => setMobileOpen(false)} // Close menu on click
                 >

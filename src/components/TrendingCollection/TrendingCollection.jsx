@@ -1,16 +1,5 @@
 import React from "react";
-import imageM from "../../assets/home/trending/Primary Photo Placeholder.png";
-import image1 from "../../assets/home/trending/Secondary Photo Placeholder.png";
-import image2 from "../../assets/home/trending/Secondary Photo Placeholder (1).png";
-import AvaImg from "../../assets/home/trending/Avatar Placeholder (1).png";
-import mushimgM from "../../assets/home/trending/Primary Photo PlaceholdermushromMain.png";
-import mushimg1 from "../../assets/home/trending/Secondary Photo PlaceholderMush1.png";
-import mushimg2 from "../../assets/home/trending/Secondary Photo Placeholder (3).png";
-import avaMus from "../../assets/home/trending/Avatar Placeholder (1)avamush.png";
-import robotM from "../../assets/home/trending/Primary Photo Placeholder (1).png";
-import robot1 from "../../assets/home/trending/Secondary Photo Placeholder (4).png";
-import robot2 from "../../assets/home/trending/Secondary Photo Placeholder (5).png";
-import avaRo from "../../assets/home/trending/Avatar Placeholder (2).png";
+
 import { Link } from "react-router-dom";
 
 const TrendingCollection = ({data}) => {
@@ -31,10 +20,13 @@ const TrendingCollection = ({data}) => {
         {/* iamages section  */}
         <div className="grid grid-cols-3 gap-5 max-sm:grid-cols-1 max-lg:grid-cols-2  w-full content-center m-auto" >
           {data.map((items) => (
-            <div key={items} className="flex flex-col justify-center items-center gap-5 max-sm:w-full">
+            <div key={items} className="flex flex-col  items-center gap-5 max-sm:w-full">
               <Link to={"/marketplace"}>
                 <img src={items.imageMain} className="max-sm:w-full" alt="" />
               </Link>
+
+              <div className=" flex flex-col gap-3">
+
               <div className="flex gap-4 max-sm:justify-between">
                 <Link
                   to={"/marketplace"}
@@ -57,6 +49,7 @@ const TrendingCollection = ({data}) => {
                   </p>
                 </Link>
               </div>
+
               <div>
                 <div className="flex flex-col gap-3">
                   <h2 className="text-white text-2xl font-bold">
@@ -68,6 +61,10 @@ const TrendingCollection = ({data}) => {
                   </div>
                 </div>
               </div>
+
+              </div>
+              
+              
             </div>
           ))}
         </div>

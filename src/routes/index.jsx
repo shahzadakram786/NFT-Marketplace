@@ -7,6 +7,7 @@ import Rankings from '../pages/rankings/Rankings'
 import ConnectWallet from '../pages/connectWallet/ConnectWallet'
 import Signup from '../pages/signuppage'
 import DynamicPage from '../pages/dynamicTopCreators/DynamicPage'
+import LoginComponent from '../components/login/Login'
 
 const routes = createBrowserRouter([
     {
@@ -43,6 +44,11 @@ const routes = createBrowserRouter([
         path:'/signup',
         element:<Layout/>,
         children:[{index:true, element:<Signup/>}]
+    },
+    {
+        path:'/login',
+        element:<Layout/>,
+        children:[{index:true, element:<LoginComponent/>}]
     }
 ]) 
 
