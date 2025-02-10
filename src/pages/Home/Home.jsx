@@ -10,11 +10,12 @@ import Trending from "../../components/TrendingCollection/TrendingCollectionData
 import topCreators from "../../components/topCreators/TopCardsData";
 import categories from "../../components/catogries/catogriesData";
 import Discover from "../../components/discoverMoreNft/discoverData";
+import Wrapper from "../../components/wrapper/Wrapper";
 
 const Home = () => {
   return (
     <>
-      <section className="bg-[#2B2B2B] flex flex-col justify-center items-center gap-16 py-20">
+    <Wrapper>
         <Hero />
 
         <TrendingCollection data={Trending} />
@@ -28,7 +29,8 @@ const Home = () => {
         <WorksComponent />
 
         <DigestComponent />
-      </section>
+
+        </Wrapper>
     </>
   );
 };
