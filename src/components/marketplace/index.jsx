@@ -2,7 +2,7 @@ import React from 'react'
 import { BiSearch } from "react-icons/bi";
 import ReDiscoverNft from '../discoverMoreNft/ReDiscoverNft';
 
-const MarketPlaceComp = ({data}) => {
+const MarketPlaceComp = ({data , bgColor}) => {
   return (
     <div className="w-full flex flex-col justify-center items-center" >
 
@@ -48,8 +48,10 @@ const MarketPlaceComp = ({data}) => {
     
   </div>
     
-    <div className='flex justify-center w-full bg-[#3B3B3B] items-center '>
-             <ReDiscoverNft data={data} className='w-full'/>
+    <div className='flex justify-center w-full bg-[#3B3B3B] items-center p-10 lg:py-20'>
+        <div className='w-[64%]'>
+                         <ReDiscoverNft data={data} bgColor={bgColor}/>
+        </div>
     </div>
 
     </div>
