@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const NftCards = ({mainImage, title, dp, pname, price, curr, highestBid, link }) => {
+const NftCards = ({mainImage, title, dp, pname, price, curr, highestBid, link , bgColor}) => {
   return (
     <Link
     to={"/marketplace"}
-    className="bg-[#3B3B3B] rounded-3xl overflow-hidden shadow-md "
+    className={`${bgColor} rounded-3xl overflow-hidden shadow-md transform transition duration-500 hover:scale-[0.95]`}
   >
     <div className="w-full h-auto ">
       <img

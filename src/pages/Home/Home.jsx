@@ -24,7 +24,7 @@ const Home = () => {
 
         <Catogries data={categories} />
 
-        <DiscoverNft data={Discover} />
+        <DiscoverNft data={Discover} bgColor={"bg-[#3B3B3B]"} />
 
         <WorksComponent />
 
