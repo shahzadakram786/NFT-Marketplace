@@ -5,7 +5,7 @@ import TopCards from "./TopCards";
 
 const Topcreators = ({data}) => {
   return (
-    <div className="flex flex-col justify-center items-center w-[80%] max-sm:w-[90%] max-lg:w-[90%] gap-10">
+    <div className="flex flex-col justify-center w-full items-center gap-10">
       {/* content area  */}
       <div className="flex flex-col justify-between w-full gap-4">
         <div>

@@ -8,7 +8,6 @@ const Marketplace = () => {
   return (
     <Wrapper >
       <MarketPlaceComp data={DataMarketPlace} bgColor={"bg-[#2B2B2B]"}/>
-
     </Wrapper>
   );
 };

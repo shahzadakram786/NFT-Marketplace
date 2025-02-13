@@ -4,14 +4,14 @@ import SingleCard from "./SingleCard";
 
 const Hero = () => {
   return (
-    <div className="flex justify-between gap-12 w-[70%] max-sm:w-[90%] max-lg:w-[90%]">
+    <div className="flex justify-between gap-12 ">
       {/* content area  */}
-      <div className="flex flex-col gap-10 w-[50%] max-sm:w-full">
-        <div className="flex flex-col gap-10 max-lg:gap-5 w-full">
-          <h1 className="text-white max-sm:text-2xl text-6xl max-lg:text-5xl font-bold w-full">
+      <div className="flex flex-col gap-6 w-[50%] max-sm:w-full">
+        <div className="flex flex-col gap-[30px] max-lg:gap-5 w-full">
+          <h1 className="text-white max-sm:text-2xl leading-[73px] text-[67px] max-lg:text-5xl font-bold w-full">
             Discover Digital Art & Collect NFTs
           </h1>
-          <p className="text-white text-2xl max-lg:text-lg leading-relaxed w-[70%] max-sm:w-full max-lg:w-full">
+          <p className="text-white text-[22px] max-lg:text-lg leading-relaxed w-full max-sm:w-full max-lg:w-full">
             NFT marketplace UI created with Anima for Figma. Collect, buy and
             sell art from more than 20k NFT artists.
           </p>
@@ -31,22 +31,22 @@ const Hero = () => {
         {/* sales and auction area  */}
         <div className="flex text-white justify-between">
           <div>
-            <h2 className="font-bold max-sm:text-2xl max-lg:text-2xl text-4xl ">
+            <h2 className="font-bold max-sm:text-2xl max-lg:text-2xl text-[28px] ">
               240K+
             </h2>
-            <p className="max-sm:text-xl text-2xl max-lg:text-xl">Total Sale</p>
+            <p className="max-sm:text-xl text-[23px] max-lg:text-xl">Total Sale</p>
           </div>
           <div>
-            <h2 className="font-bold max-sm:text-2xl max-lg:text-2xl text-4xl">
+            <h2 className="font-bold max-sm:text-2xl max-lg:text-2xl text-[28px]">
               100K+
             </h2>
-            <p className=" max-sm:text-xl text-2xl max-lg:text-xl">Auctions</p>
+            <p className=" max-sm:text-xl text-[23px] max-lg:text-xl">Auctions</p>
           </div>
           <div>
-            <h2 className="font-bold max-sm:text-2xl max-lg:text-2xl text-4xl">
+            <h2 className="font-bold max-sm:text-2xl max-lg:text-2xl text-[28px]">
               240K+
             </h2>
-            <p className="max-sm:text-xl text-2xl max-lg:text-xl">Artists</p>
+            <p className="max-sm:text-xl text-[23px] max-lg:text-xl">Artists</p>
           </div>
         </div>
       </div>

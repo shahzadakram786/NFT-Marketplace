@@ -3,7 +3,7 @@ import img from "../../assets/Photo.png";
 
 function DigestComponent() {
   return (
-      <div className="bg-[#3B3B3B] max-sm:bg-[#2B2B2B] p-10 max-sm:p-0 rounded-3xl flex gap-[6rem] justify-center w-[80%] max-sm:w-[90%] max-lg:w-[90%] items-center">
+      <div className="bg-[#3B3B3B] max-sm:bg-[#2B2B2B] p-10 max-sm:p-0 rounded-3xl flex gap-[6rem] justify-center w-full items-center">
 
         <div className=" flex  justify-between max-sm:flex-col gap-5 w-full h-full">
 

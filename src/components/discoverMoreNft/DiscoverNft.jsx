@@ -7,7 +7,7 @@ const DiscoverNft = ({data , bgColor}) => {
  
 
   return (
-    <div className="flex flex-col justify-center items-center w-[80%] max-sm:w-[90%] max-md:w-[90%] max-lg:w-[90%] gap-10">
+    <div className="flex flex-col justify-center items-center w-full  gap-10">
       {/* Header Section */}
       <div className="flex flex-col gap-10 w-full">
         <div className="flex flex-col justify-between w-full gap-4">

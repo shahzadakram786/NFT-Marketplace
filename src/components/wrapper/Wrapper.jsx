@@ -2,7 +2,8 @@ import React from "react";
 
 const Wrapper = ({children}) => {
   return (
-    <section className="bg-[#2B2B2B] flex flex-col justify-center items-center gap-16 py-20">
+    <section className=" bg-[rgb(43,43,43)] px-[3px] sm:px-[15px] md:px-[20%]"
+>
         {children}
     </section>
   );

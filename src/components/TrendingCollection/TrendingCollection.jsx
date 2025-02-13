@@ -7,7 +7,7 @@ const TrendingCollection = ({data}) => {
 
   return (
     <>
-      <div className="flex flex-col justify-start items-left text-left w-[80%] max-sm:w-[90%] max-lg:w-[90%] gap-10">
+      <div className="flex flex-col justify-start items-left text-left w-full  gap-10">
         {/* heading section  */}
         <div>
           <h2 className="text-white max-sm:text-2xl text-3xl font-bold">
