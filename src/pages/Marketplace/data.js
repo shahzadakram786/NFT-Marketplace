@@ -102,7 +102,7 @@ const DataMarketPlace = [
     price: 1.65,
     curr: "ETH",
     highestBid: 0.32,
-    category: "NFT",
+    category: "collection",
   },
   {
     id: 9,
@@ -124,7 +124,7 @@ const DataMarketPlace = [
     price: 1.75,
     curr: "ETH",
     highestBid: 0.34,
-    category: "NFT",
+    category: "collection",
   },
   {
     id: 11,
@@ -146,7 +146,7 @@ const DataMarketPlace = [
     price: 1.63,
     curr: "ETH",
     highestBid: 0.33,
-    category: "NFT",
+    category: "collection",
   },
 ];
 

@@ -20,9 +20,9 @@ const Hero = () => {
             <SingleCard />
           </div>
 
-          <div className="w-[50%] max-sm:w-full p-5 max-lg:p-4 flex justify-center items-center rounded-3xl bg-purple-500 text-white cursor-pointer gap-3">
+          <div className="w-[50%] max-sm:w-full p-5 max-lg:p-4 flex justify-center items-center transform transition duration-500 hover:scale-[0.95] rounded-3xl bg-purple-500 text-white cursor-pointer gap-3">
             <PiRocketLaunch />
-            <button className="rounded-3xl bg-purple-500 text-white cursor-pointer">
+            <button className="rounded-3xl bg-purple-500 text-white cursor-pointer ">
               Get Started
             </button>
           </div>

@@ -6,9 +6,9 @@ import DataMarketPlace from "./data";
 
 const Marketplace = () => {
   return (
-    <Wrapper >
+    // <Wrapper >
       <MarketPlaceComp data={DataMarketPlace} bgColor={"bg-[#2B2B2B]"}/>
-    </Wrapper>
+    // {/* </Wrapper> */}
   );
 };
 
