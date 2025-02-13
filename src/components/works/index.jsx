@@ -26,7 +26,7 @@ const steps = [
 
 function WorksComponent() {
   return (
-    <div className=" flex flex-col  bg-[#2B2B2B] text-white w-[80%] max-sm:w-[90%] max-lg:w-[90%] mx-auto gap-10">
+    <div className=" flex flex-col  bg-[#2B2B2B] text-white  gap-10">
       {/* Header */}
       <div className=" ">
         <h3 className="font-semibold text-3xl font-Work Sans max-sm:text-2xl ">

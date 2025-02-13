@@ -7,7 +7,7 @@ function Catogries({data}) {
  
 
   return (
-    <div className="flex flex-col w-[80%] max-md:w-[90%] max-lg:w-[90%] gap-10">
+    <div className="flex flex-col gap-10 w-full">
       <div className="">
         <h1 className="font-semibold text-white text-4xl max-sm:text-2xl ">
           Browse Categories

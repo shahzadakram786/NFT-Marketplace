@@ -15,22 +15,23 @@ import Wrapper from "../../components/wrapper/Wrapper";
 const Home = () => {
   return (
     <>
-    <Wrapper>
-        <Hero />
+      <Wrapper>
+        <div className="bg-[rgb(43,43,43)] flex flex-col justify-center items-center gap-16 py-20">
+          <Hero />
 
-        <TrendingCollection data={Trending} />
+          <TrendingCollection data={Trending} />
 
-        <Topcreators data={topCreators} />
+          <Topcreators data={topCreators} />
 
-        <Catogries data={categories} />
+          <Catogries data={categories} />
 
-        <DiscoverNft data={Discover} bgColor={"bg-[#3B3B3B]"} />
+          <DiscoverNft data={Discover} bgColor={"bg-[#3B3B3B]"} />
 
-        <WorksComponent />
+          <WorksComponent />
 
-        <DigestComponent />
-
-        </Wrapper>
+          <DigestComponent />
+        </div>
+      </Wrapper>
     </>
   );
 };

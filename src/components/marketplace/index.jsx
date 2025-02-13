@@ -4,7 +4,7 @@ import ReDiscoverNft from '../discoverMoreNft/ReDiscoverNft';
 
 const MarketPlaceComp = ({data , bgColor}) => {
   return (
-    <div className="w-full flex flex-col justify-center items-center" >
+    <div className="bg-[rgb(43,43,43)] flex flex-col justify-center items-center gap-16 py-20" >
 
     <div className="flex flex-col gap-6 p-2 w-[60%]">
       <div className="p-2 flex flex-col gap-3">
