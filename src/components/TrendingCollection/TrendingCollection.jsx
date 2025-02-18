@@ -18,11 +18,11 @@ const TrendingCollection = ({data}) => {
           </p>
         </div>
         {/* iamages section  */}
-        <div className="grid grid-cols-3 gap-5 max-sm:grid-cols-1 max-lg:grid-cols-2  w-full content-center m-auto" >
+        <div className="grid grid-cols-3 gap-5 max-sm:grid-cols-1 max-lg:grid-cols-2  w-full  content-center m-auto" >
           {data.map((items) => (
-            <div key={items} className="flex flex-col  items-center gap-5 max-sm:w-full">
+            <div key={items} className="flex flex-col   items-center gap-5 max-sm:w-full">
               <Link to={"/marketplace"}>
-                <img src={items.imageMain} className="max-sm:w-full" alt="" />
+                <img src={items.imageMain} className="max-sm:w-full transform transition duration-500 hover:scale-[0.95]" alt="" />
               </Link>
 
               <div className=" flex flex-col gap-3">
@@ -32,7 +32,7 @@ const TrendingCollection = ({data}) => {
                   to={"/marketplace"}
                   className="flex justify-center items-center bg-[#A259FF] rounded-3xl cursor-pointer"
                 >
-                  <img src={items.image1} alt="image1" />
+                  <img src={items.image1} alt="image1" className="" />
                 </Link>
                 <Link
                   to={"/marketplace"}

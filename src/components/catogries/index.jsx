@@ -16,7 +16,7 @@ function Catogries({data}) {
 
       <div className="grid grid-cols-4 gap-5 max-sm:grid-cols-2 ">
         {data.map((category) => (
-          <Link to="/marketplace">
+          <Link to="/marketplace" className="transform transition duration-500 hover:scale-[0.95]">
             <div
               key={category.id}
               className="bg-[#3B3B3B] rounded-3xl font-[Work Sans] font-semibold	text-xl"

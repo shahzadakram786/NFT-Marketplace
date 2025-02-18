@@ -24,7 +24,7 @@ const Topcreators = ({data}) => {
 
           <Link
             to={"/rankings"}
-            className="flex py-4 rounded-2xl border-purple-500 border text-md text-white px-10 max-lg:px-6 justify-center  max-sm:w-full items-center gap-2"
+            className="flex py-4 rounded-2xl transform transition duration-500 hover:scale-[0.95] border-purple-500 border text-md text-white px-10 max-lg:px-6 justify-center  max-sm:w-full items-center gap-2"
           >
             <PiRocketLaunch color="" />
             <button className="max-sm:text-lg">View Rankings</button>

@@ -28,7 +28,7 @@ const DiscoverNft = ({data , bgColor}) => {
 
             <Link
               to="/marketplace"
-              className="flex py-3 rounded-2xl border-purple-500 max-sm:w-full justify-center border text-md text-white px-10 items-center gap-2"
+              className="flex transform transition duration-500 hover:scale-[0.95] py-3 rounded-2xl border-purple-500 max-sm:w-full justify-center border text-md text-white px-10 items-center gap-2"
             >
               <IoEyeOutline />
               <button className="">See All</button>

@@ -10,7 +10,7 @@ const TopCards = ({data}) => {
         <Link
           to={"/dynamicpage"}
           key={items}
-          className=" rounded-3xl w-full max-md:p-4 p-5 max-sm:w-full flex flex-col max-md:flex-row max-lg:flex-row max-md:gap-4 gap-5 bg-[#3B3B3B] relative"
+          className="transform transition duration-500 hover:scale-[0.95] rounded-3xl w-full max-md:p-4 p-5 max-sm:w-full flex flex-col max-md:flex-row max-lg:flex-row max-md:gap-4 gap-5 bg-[#3B3B3B] relative"
         >
           <div className="flex justify-center gap-5">
             <p className="bg-[#2B2B2B] text-xs text-center p-2 rounded-[50%] text-gray-500 absolute top-3 left-4  flex items-center justify-center w-8 h-8">
