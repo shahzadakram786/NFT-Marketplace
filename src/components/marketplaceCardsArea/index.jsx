@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import ReDiscoverNft from "../discoverMoreNft/ReDiscoverNft";
 
 
-const MarketPlaceCardArea = ({ data, bgColor}) => {
+const MarketPlaceCardArea = ({ data, bgColor , search , setsearch}) => {
 
  const [activeTab, setActiveTab] = useState("collection");
- const [search ,  setSearch] = useState("")
+ 
 
 
 
@@ -52,7 +52,7 @@ const handleChangeCategory =(category)=>{
 
           <div className="flex justify-center w-full bg-[#3B3B3B] items-center py-20">
             <div className="w-full">
-              <ReDiscoverNft data={data} bgColor={bgColor} category={activeTab} searchQ={search}/>
+              <ReDiscoverNft data={data} bgColor={bgColor} category={activeTab} search={search} setsearch={setsearch}/>
             </div>
           </div>
         </div>
