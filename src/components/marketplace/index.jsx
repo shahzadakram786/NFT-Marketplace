@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BiSearch } from "react-icons/bi";
 // import ReDiscoverNft from '../discoverMoreNft/ReDiscoverNft';
 import Wrapper from '../wrapper/Wrapper';
 import MarketPlaceCardArea from '../marketplaceCardsArea';
 
-const MarketPlaceComp = ({data , bgColor}) => {
+const MarketPlaceComp = ({data , bgColor , }) => {
+
+  const [searchInput ,  setSearchInput] = useState("")
+  console.log(searchInput)
+
   return (
     <>
     <Wrapper>
@@ -24,9 +28,11 @@ const MarketPlaceComp = ({data , bgColor}) => {
           <input
 
             type="text"
-            // value={}
+            value={searchInput}
+            onChange={(e)=> setSearchInput(e.target.value)}
             placeholder="Search your favourite NFTs"
             className="bg-transparent p-2 w-full outline-none text-[#616160] text-xl"
+            
           />
           <BiSearch size={25} color="white" />
 
@@ -42,7 +48,7 @@ const MarketPlaceComp = ({data , bgColor}) => {
     </div>
     </Wrapper>
 
-     <MarketPlaceCardArea data={data} bgColor={bgColor} />
+     <MarketPlaceCardArea data={data} bgColor={bgColor} search={searchInput} setsearch={setSearchInput}/>
     </>
 
   )
