@@ -2,12 +2,15 @@ import React from "react";
 
 import NftCards from "../nftCards/NftCards";
 
-const ReDiscoverNft = ({data , bgColor}) => {
+const ReDiscoverNft = ({data , bgColor , category}) => {
   
+
+  const filteredData = data.filter(data => data.category === category)
+
 
   return (
     <div className="grid grid-cols-3 max-sm:grid-cols-1 max-md:grid-cols-2 max-lg:grid-cols-2 max-sm:w-full w-full gap-8 ">
-      {data.map((item) => (
+      {filteredData.map((item) => (
        <NftCards bgColor={bgColor}
        key={item.id}
        mainImage={item.mainImage}

@@ -22,7 +22,9 @@ const MarketPlaceComp = ({data , bgColor}) => {
       <div>
         <div className="flex gap-1 items-center justify-between px-3 text-white rounded-2xl border-gray-600 border outline-none">
           <input
+
             type="text"
+            // value={}
             placeholder="Search your favourite NFTs"
             className="bg-transparent p-2 w-full outline-none text-[#616160] text-xl"
           />
@@ -40,7 +42,7 @@ const MarketPlaceComp = ({data , bgColor}) => {
     </div>
     </Wrapper>
 
-     <MarketPlaceCardArea data={data} bgColor={bgColor}/>
+     <MarketPlaceCardArea data={data} bgColor={bgColor} />
     </>
 
   )
