@@ -6,7 +6,9 @@ const ReDiscoverNft = ({ data, bgColor, category, search }) => {
   const filteredData = data.filter((data) => {
     return (
       data.category === category &&
-      (data.title || "").toLowerCase().includes(search.toLowerCase())
+      data.title.toLowerCase().includes(search.toLowerCase())
+
+      // (data.title || "").toLowerCase().includes(search.toLowerCase())
     );
   });
 
