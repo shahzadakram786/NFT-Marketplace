@@ -40,6 +40,7 @@ const routes = createBrowserRouter([
         element:<Layout/>,
         children:[{index:true, element:<DynamicPage/>}]
     },
+    
     {
         path:'/signup',
         element:<Layout/>,
