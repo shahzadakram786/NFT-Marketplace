@@ -3,14 +3,24 @@ import { Link } from "react-router-dom";
 import marketLogo from "../../assets/nav/Storefront.png";
 import { AiOutlineUser } from "react-icons/ai";
 import { IoIosMenu, IoIosClose } from "react-icons/io";
+import { useReadingProgress } from "../progressPageBar";
 
 const Header = () => {
   const navLinks = ["Marketplace", "Rankings", "Connect a wallet"];
   const [mobileOpen, setMobileOpen] = useState(false);
 
+  const completion = useReadingProgress();
+
   return (
     <>
-      <nav className="bg-[#2B2B2B] w-full h-auto">
+      <nav className="bg-[#2B2B2B] w-full h-auto sticky z-50 top-0 backdrop-blur-3xl py-2">
+      <span
+        id="progress-bar"
+        style={{
+          transform: `translateX(${completion - 100}%)`,
+        }}
+        className={`absolute bottom-0 w-full transition-transform duration-150 h-1 bg-[#A259FF]`}
+      />
         <div className="p-6 px-8  max-sm:p-2 flex justify-between items-center max-sm:w-[90%] m-auto">
           {/* Logo */}
           <Link
